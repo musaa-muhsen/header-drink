@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: red solid 1px;
+        }
+        img {
+            width: 35px;
+        }
+        .header-container-indie {
+            margin: 0 auto;
+            max-width: 1400px;
+            background: pink;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: auto;
+
+        }
+        .block-logo-indie {
+            /* width: auto;
+            height: auto; */
+            margin-left: 10px;
+
+            
+        }
+        .block-logo-indie div {
+            margin-top: 10px;
+        }
+        .block-logo-indie p  {
+            margin-top: 5px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            
+
+        }
+
+        .block-nav-indie div a, .block-logo-indie img {
+            display: block;
+            
+        }
+        .block-nav-indie {
+            display: flex;
+
+            
+        }
+        .block-nav-indie div  {
+            display: flex;
+            box-sizing: content-box;
+            padding: 0 10px;
+        }
+        .block-nav-indie div a {
+            margin: auto;
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.7rem;           
+        }
+        .block-empty-indie {
+    display: block;
+}
+
+        
+      
+
+@media all and  (max-width: 700px) {
+
+body {
+    /* background: black; */
+}
+.block-empty-indie {
+    display: none;
+}
+.header-container-indie {              
+    grid-template-columns: 100%;
+    grid-template-rows: 30px 40px;
+}  
+.block-logo-indie {
+    background: lightgreen;
+    grid-column: 1 / span 1;
+    grid-row: 2 / 1;
+}  
+.block-nav-indie {
+    background: lightyellow;
+    grid-column: 1 / span 1;
+    grid-row: 2 / 1;
+    
+}  
+ 
+}
+
+    </style>
+</head>
+<body>
+    <header class="header-container-indie">
+        <div class="block-logo-indie">
+            <div><img src="logo-main3.svg"></div>
+           <p>CRAFT  BEER  BOTTLE  SHOP  AND  BAR</p> 
+        </div>
+        <div class="block-empty-indie"></div>
+        <div class="block-nav-indie">
+           <div><a class="a-1-indie" href="https://drinkhebden.co.uk/#location-div-indie">location</a></div> 
+           <div><a class="a-2-indie" href="https://drinkhebden.co.uk/#contact-div-indie">contact</a></div>
+        </div>
+    </header>
+</body>
+</html>
